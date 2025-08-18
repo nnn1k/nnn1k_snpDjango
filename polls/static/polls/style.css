@@ -3,5 +3,7 @@ li a {
 }
 
 body {
-    background: white url("images/background.png") no-repeat;
+    margin: 0; /* Убирает отступы по умолчанию */
+    background: white url("images/background.png") no-repeat center center fixed;
+    background-size: cover; /* Масштабирует изображение с сохранением пропорций */
 }
