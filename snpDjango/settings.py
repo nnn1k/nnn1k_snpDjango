@@ -8,7 +8,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-y%wf4hfy&=x-dw9y&n@#7*auu4ci_o*hfw+p3tvmehwy0o*otn'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
@@ -100,7 +100,6 @@ USE_TZ = True
 # Настройки статики
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # Куда collectstatic сложит файлы
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]  # Где искать статику (если есть)
 
 
 # Default primary key field type
